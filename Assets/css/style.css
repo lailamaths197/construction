@@ -1,0 +1,554 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.overall{
+    width: 90%;
+    margin: auto;
+   
+}
+nav>img{
+    width:70px;
+    height:70px;
+}
+nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+nav>ul{
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+    align-items:center;
+    width: 50%;
+}
+nav>ul>li>a{
+    text-decoration: none;
+    color: black;
+}
+nav>button{
+    padding:10px 20px 10px 10px;
+    background-color: orange;
+    border-radius: 20px;
+    border: none;
+}
+nav>button>span{
+    padding: 5px 10px 5px 5px;
+    background-color: white;
+    border-radius: 20px;
+}
+nav>button>i{
+    color: white;
+}
+.title{
+    font-size: large;
+    width:100%;
+    height: 100vh;
+    margin-top:50px;
+}
+
+.titleimg{
+    width: 90%;
+    height: 80vh;
+    position: absolute;
+    overflow: hidden;
+}
+.backimg{
+    width:100%;
+    height:80vh;
+}
+.backimg>img{
+    width: 100%;
+    height: 100%;
+    animation-name: titleimg;
+    animation-duration: 5s;
+    animation-timing-function: ease ;
+    animation-iteration-count: infinite;
+}
+@keyframes titleimg{
+    0%{transform: scale(1.0);width:100%;height:80vh;}
+    50%{transform: scale(1.2);width:100%;height:80vh;}
+    100%{transform: scale(1.0);width:100%;height:80vh;}
+}
+
+
+.textyellow{
+    color: orange;
+}
+.maintext{
+    position: relative;
+    height:80vh;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+    color: white;
+    background-color: rgb(118, 118, 187,.3);
+}
+.subtext{
+    text-align: left;
+    width:400px;
+    margin: 0px 5px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap:15px;
+    text-align: left;
+}
+form>input,select{
+    width:300px;
+    height:6vh;
+}
+.subform{
+    border:2px solid orange;
+    border-radius: 20px;
+    padding: 15px 30px;
+    background-color: rgb(202, 200, 200,.2);
+}
+.subform button{
+    padding:10px 20px 10px 10px;
+    background-color: orange;
+    border-radius: 20px;
+    border: none;
+}
+.subform button>span{
+    padding: 5px 10px 5px 5px;
+    background-color: white;
+    border-radius: 20px;
+}
+.subform button>i{
+    color: white;
+}
+/**services section**/
+.Servicestitle{
+    text-align: center;
+    margin: 50px;
+    
+}
+
+.Services{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    text-align: left;
+}
+.Servicescard{
+    width:28%;
+    margin: 30px 0px;
+    height:45vh;
+}
+.Servicescard>img{
+    width:100%;
+    height:35vh;
+    position: relative;
+}
+.serbtn>button{
+    padding:10px 20px 10px 10px;
+    background-color: orange;
+    border-radius: 20px;
+    border:none;
+}
+.serbtn>button>span{
+    padding: 5px 10px 5px 5px ;
+    background-color:white ;
+    border-radius: 10px;
+}
+.serbtn>button>i{
+    color: white;
+}
+
+.serbtn{
+    position: absolute;
+    opacity:1;
+}
+.Servicescard>img:hover{
+    transform: translateY(30px);
+}
+.section2{
+    background-color: #283451;
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    height:40vh;
+    margin: 20px 0px;
+}
+.hands img{
+    width:300px;
+    height: 300px;
+    
+}
+.handstext{
+    font-weight: bold;
+    width:50%;
+}
+.handstext h2{
+    color:orange;
+}
+.handstext p{
+    color: white;
+    font-size:larger;
+
+}
+.section3title{
+    margin-top: 100px;
+    text-align: center;
+}
+.descard img{
+    width:20px;
+    height:20px;
+    background-color: orange;
+}
+.descard i{
+    background-color: orange;
+    color: black;
+    font-size: 20px;
+}
+.descard{
+    margin:20px 0px;
+    width:60vh;
+    height:25vh;
+    align-items: center;
+    border-radius: 20px;
+    border: 0px solid grey;
+    border-left: 10px solid orange;
+    padding:20px 30px;
+    box-shadow: 0px 4px 8px rgb(0,0,0,0.2);
+    transition:transform 0.3s ease-in-out,box-shadow 0.3s ease-in-out;
+}
+.descardrow{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-evenly;
+}
+.descard:hover {
+    transform: translatex(10px);
+    box-shadow: 0 8px 16px rgb(0,0,0,0.4);
+}
+/**section4**/
+.sec4content{
+   display:flex;
+   justify-content: space-between;
+   align-items: center;
+   margin:50px;
+   top:300px;
+   left:50px;
+   color: white;
+   font-size: larger;
+   position: relative;
+}
+.subsec4content1>ul{
+    margin-top: 40px;
+    line-height: 30px;
+}
+.sec4img{
+    position:absolute;
+}
+.subsec4content2>img{
+    width:40vw;
+  border-radius: 20px;
+  animation-name: shake;
+  animation-duration: 5s;
+  animation-timing-function: ease;
+  animation-iteration-count: infinite;
+} 
+@keyframes shake{
+    0%,100%{transform: rotate(0deg);}
+    25%{transform: rotate(5deg);}
+    50%{transform: rotate(-5deg);}
+    75%{transform: rotate(5deg);}
+}
+.section5{
+    margin-top: 500px;
+}
+.section5title{
+    text-align: center;
+    font-size: larger;
+}
+.section5row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+.section5row .imgdes{
+    line-height: 25px;
+}
+.section5row .imgdes>h2{
+    color:orange;
+}
+.section5row .section5img{
+    margin: 20px;
+}
+.section5row .section5img>img{
+    width:90vh;
+    height:50vh;
+}
+.section6{
+    background-color: #283451;
+    color: white;
+}
+.sec6title{
+    text-align: center;
+    padding: 20px;
+}
+.sec6content1>i{
+    color: orange;
+    font-size: 70px;
+}
+.sec6content1>h2{
+    color: orange;
+}
+.sec6content1{
+    margin: 50px 300px 50px 300px;
+    background-color:#505b75;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.sec6img>img{
+    width:10vh;
+    height: 10vh;
+    border-radius: 50px;
+}
+.sec6img{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width:50vh;
+}
+.sec6content2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    text-align: center;
+    padding: 0px 0px 20px 0px;
+}
+.sec6sub>h1{
+    color: orange;
+}
+.sec7title{
+    text-align: center;
+    margin-top: 100px;
+}
+.sec7row{
+    margin-top: 30px;
+}
+.sec7row>img{
+    width:30vh;
+    box-shadow: 4px 4px 8px rgb(0,0,0,0.2) ;
+    margin:20px;
+    border-radius: 20px;
+}
+.section8img>img{
+    width:100%;
+    height:65vh;
+}
+.section8img{
+    width:90%;
+    position:absolute;
+}
+.section8main .section8{
+    text-align: center;
+    line-height: 40px;
+    position:relative;
+    top:200px;
+    color: white;
+    background-color: rgb(118,118,118,0.5);
+   }
+.section8>button{
+    padding:10px 20px 10px 5px;
+    background-color: orange;
+    border-radius: 20px;
+    border: none;
+}
+.section8>button>span{
+    padding:5px 10px 5px 5px;
+    background-color: white;
+    border-radius: 20px;
+    border: none;
+}
+.section8>button>i{
+    color: white;
+}
+.section8>ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.footer{
+    margin-top: 400px;
+    padding-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #283451;
+    line-height: 30px;
+    color: white;
+}
+.footer1{
+    width:70vh;
+}
+.footer1>img{
+    width:40vh;
+    height:40vh;
+}
+.footer ul{
+    list-style-type: none;
+}
+.footer a{
+    text-decoration: none;
+    color: white;
+}
+.footer i{
+    color: orange;
+}
+@media only screen and (max-width:770px) {
+    .Servicescard{
+        margin:100px;
+        height:50vh;
+    }
+    
+}
+
+
+@media  only  screen and (max-width:330px) {
+    nav{
+        display: block;
+        align-items: center;
+        text-align: center;
+    }
+    nav>ul{
+        display: block;
+        align-items: center;
+        text-align: center;
+        width:100%;
+    }
+    
+    nav>button{
+        align-items: center;
+    }
+    .maintext{
+        display:block;
+    }
+    form>input,select{
+    width:150px;
+    height:3vh;
+}
+    .subform button{
+    padding:10px 10px 10px 10px;
+    background-color: orange;
+    border-radius: 20px;
+    border: none;
+}
+.subform button>span{
+    padding: 5px 5px 5px 5px;
+    background-color: white;
+    border-radius: 20px;
+}
+.subtext{
+    text-align: left;
+    width:300px;
+    margin: 0px 5px;
+}
+.subform{
+    border:2px solid orange;
+    border-radius: 20px;
+    padding: 3px;
+    background-color: rgb(202, 200, 200,.2);
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    text-align: left;
+}
+.Services{
+    display: block;
+    text-align: left;
+}
+.Servicescard{
+    width:100%;
+    height:45vh;
+    margin: 50px 0px;
+}
+.Servicestitle{
+    text-align: center;
+}
+.section2{
+    height:100vh;
+}
+.descard{
+    height:30vh;
+}
+.sec4img>img{
+    width:100%;
+    height: 90vh;
+}
+.sec4img{
+    position: absolute;
+}
+.sec4content{
+    width:90%;
+    display:block;
+    gap:10px;
+   top:5px;
+   align-items: center;
+   margin: 1px;
+   color:white;
+   font-size: larger;
+   position: relative;
+}
+.subsec4content1{
+    width:90%;
+}
+.section5row{
+    display: block;
+}
+.section5row .section5img>img{
+    width:40vh;
+    height:60vh;
+}
+.sec6content1{
+    margin:1px;
+}
+sec6img>img{
+    width:5vh;
+    height: 5vh;
+    border-radius: 50px;
+}
+.sec6img{
+    width:40vh;
+}
+.section8main .section8{
+    top:50px;
+}
+.section8img>img{
+   width:100%;
+   height: 100vh; 
+}
+.section8>ul{
+    display:block;
+}
+.footer{
+    display: block;
+    text-align: center;
+    margin-top:300px;
+    padding: 10px;
+    gap:20px;
+}
+.footer1 img{
+    width:20vh;
+    height:20vh;
+}
+.footer1{
+    width:40vh;
+}
+}

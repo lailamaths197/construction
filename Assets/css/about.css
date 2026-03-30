@@ -1,0 +1,309 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.overall{
+    width: 90%;
+    margin: auto;
+   
+}
+nav>img{
+    width:70px;
+    height:70px;
+}
+nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+nav>ul{
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+    align-items:center;
+    width: 50%;
+}
+nav>ul>li>a{
+    text-decoration: none;
+    color: black;
+}
+button{
+    padding:10px 20px 10px 10px;
+    background-color: orange;
+    border-radius: 20px;
+    border: none;
+}
+span{
+    padding: 5px 10px 5px 5px;
+    background-color: white;
+    border-radius: 20px;
+}
+i{
+    color: white;
+}
+
+.banner{
+    width:90%;
+    height:50vh;
+}
+.banner .bannerimg{
+    position: absolute;
+    width:90%;
+    height: 50vh;
+    overflow: hidden;
+    
+}
+.bannerimg>img{ 
+    width:100%;
+    height:100%;
+}
+.banner>.bannertext{
+    position:relative;
+    background-color: rgb(118,118,187,.3);
+    top:150px;
+    color:white;
+    text-align: center;
+}
+.bannertext>h1{
+    color:orange;
+}
+.dessub h1{
+    color:orange;
+}
+.dessub p{
+    color: black;
+}
+.des{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 10px;
+}
+.dessub{
+    border: 1px solid orange;
+    border-bottom: 5px solid orange;
+    padding:30px 40px;
+    box-shadow: 0px 4px 8px rgb(0,0,0,0.2);
+    border-radius: 20px;
+}
+.section1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.subsec1{
+    color:black;
+}
+
+.subsec2>img{
+    width:40vh;
+    height: 50vh;
+    border-radius: 20px;
+    margin: 10px;
+}
+.subsec3>img{
+    width:70vh;
+    height:40vh;
+    border-radius: 20px;
+    margin: 10px;
+
+}
+.section2{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+}
+.section2sub1>img{
+    width:100px;
+    height:100px;
+}
+.section2sub1{
+    background: #283452;
+    align-items: center;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 20px;
+}
+.section2sub2{
+    background-color: orange;
+    align-items: center;
+    margin:0px;
+    padding:20px;
+    border-radius: 20px;
+}
+.section2sub2>img{
+    width:100px;
+    height:100px;
+
+}
+.section3{
+    color: black;
+    margin: 50px;
+}
+.section3title{
+    text-align: center;
+}
+.section3row{
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.subrow{
+    width:23%;
+    box-shadow: 0px 4px 8px rgb(0,0,0,0.2);
+    border-radius: 20px;
+}
+.subrow>img{
+    width:10vh;
+    height:10vh;
+}
+.section4{
+    color:black;
+}
+.section4title{
+    text-align: center;
+    margin-top: 50px;
+}
+.teamrow{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 20px;
+}
+.team>img{
+    width:25vh;
+    height:15vh;
+    border-radius: 50%;
+}
+.section5img>img{
+    width:100%;
+    height:65vh;
+}
+.section5img{
+    width:90%;
+    position:absolute;
+}
+.section5main .section5{
+    text-align: center;
+    line-height: 40px;
+    position:relative;
+    top:200px;
+    color: white;
+    background-color: rgb(118,118,118,0.5);
+}
+.section5>h1{
+    color: orange;
+}
+.section5>ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.footer{
+    margin-top: 500px;
+    padding-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #283451;
+    line-height: 30px;
+    color: white;
+}
+.footer1{
+    width:70vh;
+}
+.footer1>img{
+    width:40vh;
+    height:40vh;
+}
+.footer ul{
+    list-style-type: none;
+}
+.footer a{
+    text-decoration: none;
+    color: white;
+}
+.footer i{
+    color: orange;
+}
+
+@media only screen and (max-width:330px){
+    nav{
+        display: block;
+        align-items: center;
+        text-align: center;
+    }
+    nav>ul{
+        display: block;
+        align-items: center;
+        text-align: center;
+        width:100%;
+    }
+    
+    nav>button{
+        align-items: center;
+    }
+    .banner .bannertext{
+        top:20px;
+    }
+    .dessub{
+        margin: 10px;
+    }
+    .section1{
+        display: block;
+    }
+    .subsec2>img{
+        width:100%;
+    }
+    .subsec3>img{
+        width:100%;
+    }
+    .section3row{
+        display: block;
+    }
+    .subrow{
+        width:100%;
+        margin-top: 20px;
+        gap:50px;
+    }
+    .section5{
+        display: block;
+    
+    }
+    .section5 .sectimg{
+        width:90%;
+        margin: 100px 0px;
+    }
+    .section5main .section5{
+        top:50px;
+    }
+    .section5img>img{
+        width:100%;
+        height: 100vh; 
+    }
+    .section5>ul{
+        display:block;
+    }
+    .footer{
+    display: block;
+    text-align: center;
+    margin-top:400px;
+    padding: 10px;
+    gap:20px;
+}
+.footer1 img{
+    width:20vh;
+    height:20vh;
+}
+.footer1{
+    width:40vh;
+}
+}
